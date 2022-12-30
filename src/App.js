@@ -7,13 +7,18 @@ import { Wrapper } from "./components/wrapper";
 import ToggleSwitch from "./components/Switch/ToggleSwitch";
 
 function App() {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState(null);
+
+  useEffect(() => {
+    const mode = window.localStorage.getItem("theme");
+    setTheme(mode);
+  }, []);
 
   return (
     <ThemeProvider theme={theme === "dark" ? darkTheme : lightTheme}>
       <GlobalStyles />
       <Wrapper>
-        <ToggleSwitch />
+        <ToggleSwitch setTheme={setTheme} theme={theme} />
         <Card />
       </Wrapper>
     </ThemeProvider>

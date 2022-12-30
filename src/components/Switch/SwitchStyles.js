@@ -27,10 +27,7 @@ export const SwitchBar = styled.div`
   background: #c8c6c6;
 `;
 
-export const Input = styled.input.attrs({
-  type: "checkbox",
-  id: "theme",
-})`
+export const Input = styled.input`
   display: none;
   &:checked ~ .switch__bar {
     background: #334257;
