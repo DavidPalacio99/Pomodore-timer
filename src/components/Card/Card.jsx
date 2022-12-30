@@ -8,7 +8,6 @@ const Card = () => {
         <CardTitle>Pomodore timer</CardTitle>
         <>
           <CardButton>Start Pomodore</CardButton>
-
           <CardButton>Pause Pomodore</CardButton>
         </>
       </CardContent>
