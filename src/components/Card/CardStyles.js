@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { CircularProgressbar } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 
 export const CardContent = styled.div`
   display: flex;
@@ -19,6 +21,7 @@ export const CardTitle = styled.h1`
 
 export const CardButton = styled.button`
   display: flex;
+  z-index: 1000;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -39,5 +42,21 @@ export const CardButton = styled.button`
   }
   &:active {
     transform: scale(0.96);
+  }
+`;
+export const Progress = styled(CircularProgressbar)`
+  .CircularProgressbar-path {
+    stroke: ${({ theme, isBreak }) =>
+      isBreak ? theme.pathColorBreak : theme.pathColor};
+  }
+  .CircularProgressbar-trail {
+    stroke: ${({ theme, isBreak }) =>
+      isBreak ? theme.trailColorBreak : theme.trailColor};
+  }
+  .CircularProgressbar-text {
+    fill: ${({ theme }) => theme.colorText};
+  }
+  .CircularProgressbar-background {
+    fill: green;
   }
 `;

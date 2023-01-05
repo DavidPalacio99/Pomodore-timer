@@ -4,7 +4,7 @@ export const GlobalStyles = createGlobalStyle`
 
 
 body{
-    margin:0;
+    margin:0 ;
     background: ${(props) => {
       // console.log(props);
       return props.theme.background;
@@ -23,22 +23,3 @@ body{
   }
   
   `;
-
-// export const GlobalStyles = createGlobalStyle`
-
-// body{
-//   margin:0;
-//   background: red;
-//   color: blue;
-//   transition:all 0.50s linear;
-// }
-
-// button{
-//   border: none;
-// }
-
-// h1{
-//   margin: 0;
-// }
-
-// `;

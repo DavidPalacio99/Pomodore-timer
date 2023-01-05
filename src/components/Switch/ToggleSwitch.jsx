@@ -1,7 +1,11 @@
 import React from "react";
 import { Input, SwitchBar, SwitchIcon } from "./SwitchStyles";
+import clickSfx from "../../sounds/slide.mp3";
+import useSound from "use-sound";
 
 const ToggleSwitch = ({ setTheme, theme }) => {
+  const [playSfx] = useSound(clickSfx, { volume: 4 });
+
   return (
     <label htmlFor="theme">
       <Input
@@ -9,6 +13,7 @@ const ToggleSwitch = ({ setTheme, theme }) => {
         type={"checkbox"}
         checked={theme === "dark" ? true : false}
         onChange={() => {
+          playSfx();
           window.localStorage.setItem(
             "theme",
             theme === "dark" ? "light" : "dark"
