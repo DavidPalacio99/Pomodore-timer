@@ -1,127 +1,3 @@
-.modal {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.75);
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal.is-open {
-  display: flex;
-}
-
-.modal-container {
-  position: relative;
-  background-color: #fff;
-  min-width: 300px;
-  max-width: 420px;
-  min-height: 200px;
-  max-height: 600px;
-  overflow-y: auto;
-  padding: 1rem;
-  border-radius: 20px;
-}
-
-.modal-close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  cursor: pointer;
-  background-color: #fff;
-  font-family: "Poppins";
-  font-size: 1.2rem;
-}
-
-.pomodoro-app__preferences {
-  margin-top: 20px;
-  background: none;
-  border: 0;
-  transition: transform 0.15s ease-in-out;
-  cursor: pointer;
-}
-
-.pomodoro-app__preferences:hover {
-  transform: scale(1.4) rotate(45deg);
-}
-
-h5 {
-  /* border: 1px solid red; */
-  display: inline;
-}
-
-.settings {
-  border-bottom: 1.5px solid rgb(179, 179, 179);
-  padding-bottom: 25px;
-}
-
-.pane__time--settings {
-  border: 1px solid red;
-  padding: 10px;
-}
-
-h6 {
-  margin: 0;
-}
-
-.pane__font-preference {
-  margin-top: 15px;
-  border: 1px solid black;
-  padding: 10px;
-}
-
-.pane__color-preference {
-  margin-top: 15px;
-  border: 1px solid black;
-  padding: 10px;
-}
-
-.pane__apply-row {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.pane__apply-preferences {
-  width: 140px;
-  height: 53px;
-  margin-top: 36px;
-  padding: 0;
-  border-radius: 26.5px;
-  background-color: #f87070;
-  font-family: Kumbh Sans;
-  font-weight: bold;
-  font-size: 16px;
-  color: #ffffff;
-  transition: transform 0.15s ease-in-out;
-  cursor: pointer;
-}
-
-.pane__apply-preferences:hover {
-  transform: scale(1.1);
-}
-
-.pane__time-settings h3 {
-  margin: 24px 40px 22px 40px;
-}
-
-.pane__time-settings h3,
-.pane__font-preference h3,
-.pane__color-preference h3 {
-  text-align: left;
-  font-size: 13px;
-  line-height: 13px;
-  letter-spacing: 5px;
-}
-
-.time-settings__form {
-  margin: 24px 40px 24px 40px;
-}
-
 .waves {
   height: 100vh;
   margin: 0;
@@ -149,4 +25,13 @@ h6 {
   bottom: 0;
   left: 0;
   /* display: none; */
+}
+
+@media (max-height: 820px) {
+  .wave {
+    display: none;
+  }
+  .wave2 {
+    display: none;
+  }
 }
