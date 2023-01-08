@@ -6,7 +6,6 @@ export const GlobalStyles = createGlobalStyle`
 body{
     margin:0 ;
     background: ${(props) => {
-      // console.log(props);
       return props.theme.background;
     }};
     color:${({ theme }) => theme.colorText};
@@ -20,6 +19,4 @@ body{
   
   h1{
     margin: 0;
-  }
-  
-  `;
+  }`;

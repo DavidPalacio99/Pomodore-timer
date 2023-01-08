@@ -32,6 +32,7 @@ const Card = () => {
   const [resume, setResume] = useState(false);
   const timerRef = useRef(99999);
   const [isReset, setIsReset] = useState(true);
+
   if (currentTime === time) {
     clearInterval(timerRef.current);
     timesUp();
