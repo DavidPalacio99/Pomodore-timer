@@ -1,6 +1,6 @@
 <h2>Pomodore timer</h2>
 
-Deploy:https://pomodore-timer-nine.vercel.app/
+Deploy: https://pomodore-timer-nine.vercel.app/
 
 <img width="35%" align="right" alt="Github" src="https://vivaldi.com/wp-content/uploads/The_Pomodoro_timer_in_Vivaldi_browser-980x551.png" />
 
